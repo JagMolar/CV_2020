@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1231,6 +1234,61 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+		#wrapper .portfolio {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-ms-justify-content: space-between;
+			justify-content: space-between;
+			position: relative;
+			min-height: 100vh;
+			width: 100%;
+			padding: 4rem 2rem;
+			z-index: 3;
+		}
+	
+			#wrapper .portfolio:before {
+				content: '';
+				display: block;
+			}
+	
+			@media screen and (max-width: 1680px) {
+	
+				#wrapper .portfolio {
+					padding: 3rem 2rem;
+				}
+	
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				#wrapper .portfolio{
+					padding: 2rem 1rem;
+				}
+	
+			}
+	
+			@media screen and (max-width: 480px) {
+	
+				#wrapper .port{
+					padding: 1rem;
+				}
+	
+			}
 
 /* Header */
 
@@ -1673,3 +1731,274 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* PERSONALIZACIONES */
+
+/* imagen project */
+
+.image.project {
+	display: block;
+	margin: 2.5rem 0;
+	width: 100%;
+}
+
+	.image.project img {
+		width: 100%;
+	}
+
+@media screen and (max-width: 736px) {
+
+	.image.project {
+		margin: 2rem 0;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.image.project {
+		margin: 1.5rem 0;
+	}
+
+}
+
+
+
+/* PROJECT */
+
+#project {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: relative;
+	max-width: 100%;
+	z-index: 3;
+}
+
+	#project article.pro {
+		-moz-transform: translateY(0.25rem);
+		-webkit-transform: translateY(0.25rem);
+		-ms-transform: translateY(0.25rem);
+		transform: translateY(0.25rem);
+		-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+		-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+		-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+		transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+		padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+		position: relative;
+		width: 40rem;
+		max-width: 100%;
+		background-color: rgba(27, 31, 34, 0.85);
+		border-radius: 4px;
+		opacity: 1;
+	}
+
+		/* #project article.pro.active {
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			opacity: 1;
+		} */
+
+		#project article.pro .close {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 4rem;
+			height: 4rem;
+			cursor: pointer;
+			text-indent: 4rem;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+			#project article.pro .close:before {
+				-moz-transition: background-color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out;
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0.75rem;
+				left: 0.75rem;
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 100%;
+				background-position: center;
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+				background-size: 20px 20px;
+				background-repeat: no-repeat;
+			}
+
+			#project article.pro .close:hover:before {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			#project article.pro .close:active:before {
+				background-color: rgba(255, 255, 255, 0.175);
+			}
+			
+			
+		#project article.pro .cv p{
+			margin-bottom:0px;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		#project article.pro {
+			padding: 3.5rem 2rem 0.5rem 2rem ;
+		}
+
+			#project article.pro .close:before {
+				top: 0.875rem;
+				left: 0.875rem;
+				width: 2.25rem;
+				height: 2.25rem;
+				background-size: 14px 14px;
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#project article.pro {
+			padding: 3rem 1.5rem 0.5rem 1.5rem ;
+		}
+
+	}
+
+
+
+
+/* VIDEO */
+
+.video {
+	border-radius: 4px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+	.video:before {
+		pointer-events: none;
+		background-image: url("../../images/overlay.png");
+		background-color: rgba(19, 21, 25, 0.5);
+		border-radius: 4px;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.video video {
+		border-radius: 4px;
+		display: block;
+	}
+
+	.video.left, .video.right {
+		max-width: 40%;
+	}
+
+		.video.left video, .video.right video {
+			width: 90%;
+		}
+
+	.video.left {
+		float: left;
+		padding: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.video.right {
+		float: right;
+		padding: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.video.fit {
+		display: block;
+		margin: 0 0 2rem 0;
+		width: 90%;
+	}
+
+		.video.fit video {
+			width: 90%;
+		}
+
+	.video.main {
+		display: block;
+		margin: 2.5rem 0;
+		width: 100%;
+	}
+
+		.video.main video {
+			width: 100%;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		.video.main {
+			margin: 2rem 0;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.image.main {
+			margin: 1.5rem 0;
+		}
+
+	}
+
+	.project p{
+		line-height: normal;
+		margin-bottom: 0.5rem;
+	}
+
+/* Botones de entradas de estilos utilizados en páginas de descripción de películas.*/
+
+.button-container{
+	display:inline-block;
+	position:relative;
+	}
+	
+	.button-container a{
+	position: absolute;
+	margin: 0 auto;
+	bottom:3rem;
+	right:3rem;
+	background-color:#F9F3F347;
+	border-radius:1.5em;
+	color:white;
+	text-transform:uppercase;
+	padding:0.3rem 1.5rem;
+	}
