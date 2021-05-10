@@ -27,7 +27,7 @@ function alerta(event){*/
 		} else {
 			Email.send({
 				// SecureToken : "6310adf6-d8ed-4dc1-a14a-0d13a2d8a989",
-				SecureToken : "39e2c8a3-4088-4de1-a71c-6ed7c430972d",
+				SecureToken : "eeff9f11-6615-4e87-a379-0610dea216cb",
 				To : 'juangmuelas@hotmail.com',
 				From : "juangmuelas@gmail.com",
 				Subject : "Mensaje desde mi web personal",
