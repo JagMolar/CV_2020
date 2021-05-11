@@ -26,7 +26,7 @@ function alerta(event){*/
 			alert("Revise el formulario");  
 		} else {
 			Email.send({
-				SecureToken : "089ab1-2433-4e0b-b82f-b892a069a3ae",
+				SecureToken : "ce03af9e-dc26-4313-aa44-f36899962d3f",
 				// Host : "smtp.gmail.com",
 				// Username : "Juan Garcia Muelas",
 				// Password : "Gm@i1+J@g21",
