@@ -18,18 +18,25 @@ function alerta(event){*/
 	var m = document.getElementById("message").value;
 	var robot = document.getElementById("demo-human").checked;
 	var texto = m;
-	/*console.log(texto.length);
-	console.log(nombre);
-	console.log("funciona");
-	alert("correo enviado con éxito"); */
+	// console.log(texto.length);
+	// console.log(nombre);
+	// console.log("funciona");
+	alert("correo enviado con éxito"); 
 	if (nombre.length<1 || email.length<1 || m.length<1 || robot == false) {
 			alert("Revise el formulario");  
 		} else {
 			Email.send({
-				// SecureToken : "6310adf6-d8ed-4dc1-a14a-0d13a2d8a989",
-				SecureToken : "eeff9f11-6615-4e87-a379-0610dea216cb",
+				SecureToken : "edc066c5-db69-4c5c-81cd-a7add81254f0",
+				// Host : "smtp.gmail.com",
+				// Username : "Juan Garcia Muelas",
+				// Password : "Gm@i1+J@g21",
+				// To : 'juangmuelas@hotmail.com',
+				// From : "juangmuelas@gmail.com",
+				// Host : "smtp.office365.com",
+				// Username : "Juan Garcia Muelas",
+				// Password : "Jmolar.19@",
 				To : 'juangmuelas@hotmail.com',
-				From : "juangmuelas@gmail.com",
+				From : "jagmolar@hotmail.com",
 				Subject : "Mensaje desde mi web personal",
 				Body : "<html><p>Nombre: "+nombre+"</p><p>Email: "+email+"</p><p>Asunto: "+texto+"</p></html>",
 			})
