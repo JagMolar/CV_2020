@@ -26,14 +26,14 @@ function alerta(event){*/
 			alert("Revise el formulario");  
 		} else {
 			Email.send({
-				SecureToken : "ce03af9e-dc26-4313-aa44-f36899962d3f",
+				SecureToken : "f815af69-1095-49df-a4fd-1cd403520192",
 				// Host : "smtp.gmail.com",
 				// Username : "Juan Garcia Muelas",
 				// Password : "Gm@i1+J@g21",
 				To : 'juangmuelas@hotmail.com',
-				From : "juangmuelas@gmail.com",
+				From : "micvonline2020@gmail.com",
 				Subject : "Mensaje desde mi web personal",
-				Body : "<html><p>Nombre: "+nombre+"</p><p>Email: "+email+"</p><p>Asunto: "+texto+"</p></html>",
+				Body : "<html><p>Nombre: "+nombre+"</p><p>Email: "+email+"</p><p>Asunto: "+texto+"</p></html>"
 			})
 			.then(
 			message => alert("Gracias "+nombre+". Su mensaje ha sido enviado con exito.")
