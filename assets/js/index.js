@@ -27,9 +27,6 @@ function alerta(event){*/
 		} else {
 			Email.send({
 				SecureToken : "f815af69-1095-49df-a4fd-1cd403520192",
-				// Host : "smtp.gmail.com",
-				// Username : "Juan Garcia Muelas",
-				// Password : "Gm@i1+J@g21",
 				To : 'juangmuelas@hotmail.com',
 				From : "micvonline2020@gmail.com",
 				Subject : "Mensaje desde mi web personal",
